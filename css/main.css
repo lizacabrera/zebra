@@ -100,6 +100,7 @@ sky blue: #caebf2;
 carbon (dark grey): #a9a9a9;
 watermelon: #ff383f;
 neutral: #efefef;
+does this green work: #388E3C
 **********/
 
 html {
@@ -108,8 +109,7 @@ html {
 }
 body {
   width: 96%;
-  padding: 0 2%;
-
+  font-family: 'Arima Madurai', cursive;
 }
 
 /** header **/
@@ -135,6 +135,8 @@ body {
 }
 *********/
 
+/*** Header ***/
+
 header img {
   display: flex;
   float:left;
@@ -157,26 +159,26 @@ nav a{
 }
 
 
+/***** Main ****/
+
 .main{
   clear:both;
-  width: 85%;
-  padding: 4% 0;
-  margin:auto;
+  width: 100%;
+  background-color: #ff383f;
+  padding: 5% 5%;
 }
 h2 {
   font-size: 30px;
   font-weight: bolder;
-  border-bottom: 1px dashed #ff383f;
 }
 
 h4{
   font-size: 18px;
   font-weight: lighter;
-  justify-content: space-around;
 }
 
 span {
-  color:#ff383f;
+  color:#a9a9a9;
 }
 
 .about p{
@@ -187,7 +189,7 @@ span {
   flex-flow:row wrap;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width:96%;
 }
 
 figure {
@@ -196,16 +198,49 @@ figure {
 figcaption {
   font-size: 14px;
   width: 200px;
-  padding-top: 5%;
+  padding-top: 2%;
 }
-/** .thumbnail:hover {
-    position:relative;
-    top:-25px;
-    left:-35px;
-    width:500px;
-    height:auto;
-    z-index:999;
-} **/
+
+
+#work{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+/** circles **/
+
+.circle
+    {
+    width:270px;
+    height:270px;
+    border-radius:200px;
+    font-size:16px;
+    color:#000;
+    line-height:30px;
+    text-align:center;
+    background:#a9a9a9;
+    }
+
+/** Footer **/
+#footer {
+  padding: 3% 2%;
+  background-color: #ff383f;
+}
+
+#footer h3{
+
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+
+
+}
+
 
 
 
@@ -309,14 +344,12 @@ figcaption {
 
   .main{
     clear:both;
-    width: 85%;
-    padding: 5% 0;
   }
 }
 
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 935px) {
+
 }
 
 @media print,
